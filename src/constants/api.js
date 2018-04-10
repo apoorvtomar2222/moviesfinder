@@ -1,0 +1,1 @@
+export const GITHUB_FETCH_USER = 'https://api.github.com/users/octocat';
