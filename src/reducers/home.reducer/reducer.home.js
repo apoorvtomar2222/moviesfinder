@@ -5,7 +5,7 @@ import {
 } from '../../constants/index'
 const initialState = {
     loading: false,
-    movvieData: []
+    movielist: {}
 }
 
 export const homeReducer = (state = initialState, action) => {
@@ -21,7 +21,7 @@ export const homeReducer = (state = initialState, action) => {
         case HOME_FEED_DATA_SUCCESS: {
             return {
                 ...state,
-                movvieData: action.data
+                movielist: action.data
 
             }
         }

@@ -1,1 +1,1 @@
-export const GITHUB_FETCH_USER = 'https://api.github.com/users/octocat';
+export const GITHUB_FETCH_USER = 'https://api.themoviedb.org/3/discover/movie?api_key=4e727900dca2a32d5bcee16bd47cb2ea';

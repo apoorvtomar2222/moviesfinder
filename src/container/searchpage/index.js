@@ -21,14 +21,34 @@ class Search extends Component {
         this.props.dispatch(asyncDataload());
 
     }
-    render() {
+
+    movieListDiv(list) {
+        console.log('list');
         return (
+            <div class="container-fluid">
+                <div class="row">
+                    hi
+
+                </div>
+            </div>
+        )
+    }
+    render() {
+        console.log('movielist', this.props.homeReducer.movielist.results);
+
+        return (
+
             <div>
                 <div >
                     <label >Find User</label>
                     <input type="text" className="form-control" id="usr" value={this.state.searchParam} onChange={e => this.onTodoChange(e.target.value)} />
                     <input type='button' onClick={this.submit} value='Search User' />
                 </div>
+
+                <div >
+                    {this.props.homeReducer.movielist && this.props.homeReducer.movielist.results.maps(this.movieListDiv)}
+                </div>
+
             </div >
         );
     }
