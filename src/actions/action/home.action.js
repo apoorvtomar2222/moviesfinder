@@ -4,11 +4,10 @@ import {
     HOME_FEED_DATA_SUCCESS
 } from '../../constants/index';
 export const asyncHomeDataLoading = () => {
-    dispatch({
-        type: HOME_FEED_DATA_LOADING,
+    return {
+        type: HOME_FEED_DATA_LOADING
 
     }
-    )
 }
 
 export const asyncHomeDataLoadingSuccess = (data) => {
@@ -20,7 +19,7 @@ export const asyncHomeDataLoadingSuccess = (data) => {
 
 export const asyncHomeDataLoadingError = (err) => {
     return {
-        tpye: HOME_FEED_DATA_ERROR,
+        type: HOME_FEED_DATA_ERROR,
         err
     }
 }
