@@ -1,1 +1,1 @@
-# react-redux-boilerplate
+# Movie Finder

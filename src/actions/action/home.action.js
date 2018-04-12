@@ -1,8 +1,9 @@
 import {
     HOME_FEED_DATA_ERROR,
     HOME_FEED_DATA_LOADING,
-    HOME_FEED_DATA_SUCCESS
+    HOME_FEED_DATA_SUCCESS,
 } from '../../constants/index';
+
 export const asyncHomeDataLoading = () => {
     return {
         type: HOME_FEED_DATA_LOADING
